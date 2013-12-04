@@ -5,8 +5,8 @@ Chitchat is a chat app written with Sinatra, EventMachine, and EM-Websocket. Cur
 
 I built Chitchat to learn about socket programming and concurrency. This mission has led the project through several phases:
 
-1. A simple [chat server using threads](https://github.com/akmcc/Evented/blob/master/threaded_chat_server.rb).
-2. [Writing an event loop](https://github.com/akmcc/Evented/blob/master/unthreaded_chat_server.rb) to handle chat messages.
+1. A [simple chat server](../master/event_loop_with_threads.rb) using threads and IO.select.
+2. An [event loop](../master/event_loop.rb) (no threads this time) to handle chat messages.
 3. Writing a [chat server using EventMachine](../master/EM_chat.rb).
 4. And finally Chitchat: turning phase 3 into a web app by using EM-Websockets with Sinatra.
 
